@@ -3,8 +3,6 @@ const Hour = document.getElementById('hour');
 const Minute = document.getElementById('minute');
 const Second = document.getElementById('second');
 
-
-
 let CountDown = () => {
     const Time = new Date();
     const EventTime = new Date("February 4, 2022 12:00:01")
@@ -24,7 +22,5 @@ let CountDown = () => {
     Minute.innerText = LeftEventMinute < 10 ? '0' + LeftEventMinute : LeftEventMinute;
     Second.innerText = LeftEventSeond < 10 ? '0' + LeftEventSeond : LeftEventSeond;
 }
-
-// CountDown()
 
 setInterval(CountDown, 1000)
